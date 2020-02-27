@@ -80,13 +80,13 @@
     daemon_reload: yes
     enabled: yes
 
-- name: Install xbuild
-  become: yes
-  become_user: isucon
-  git:
-    repo: https://masayanakajima:engineergamesec1812@github.com/tagomoris/xbuild.git
-    dest: /home/isucon/xbuild
-    version: master
+#- name: Install xbuild
+#  become: yes
+#  become_user: isucon
+#  git:
+#    repo: https://masayanakajima:engineergamesec1812@github.com/tagomoris/xbuild.git
+#    dest: /home/isucon/xbuild
+#    version: master
 
 - name: mkdir /home/isucon/local for xbuild
   become: yes
