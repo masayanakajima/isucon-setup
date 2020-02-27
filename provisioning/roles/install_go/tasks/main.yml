@@ -4,7 +4,7 @@
   become_user: isucon
   args:
     chdir: /home/isucon
-  command: ./home/isucon/local/go/bin/go version
+  command: ./local/go/bin/go version
   register: go_version_output
   changed_when: go_version_output is failed
   ignore_errors: true
@@ -20,7 +20,7 @@
   args:
     chdir: /home/isucon
   command: |
-    ./home/isucon/xbuild/go-install 1.10.3 /home/isucon/local/go
+    ./xbuild/go-install 1.10.3 /home/isucon/local/go
 
 - name: Add PATH for Go
   become: yes
@@ -37,7 +37,7 @@
   become_user: isucon
   args:
     chdir: /home/isucon
-  command: ./home/isucon/go/bin/gb help
+  command: ./go/bin/gb help
   register: go_gb_version_output
   changed_when: go_gb_version_output is failed
   ignore_errors: true
