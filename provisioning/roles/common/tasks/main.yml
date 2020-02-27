@@ -81,10 +81,10 @@
     enabled: yes
 
 - name: Install xbuild
-  become: no
+  become: yes
   become_user: isucon
   git:
-    repo: https://github.com/tagomoris/xbuild.git
+    repo: https://masayanakajima:engineergamesec1812@github.com/tagomoris/xbuild.git
     dest: /home/isucon/xbuild
     version: master
 
