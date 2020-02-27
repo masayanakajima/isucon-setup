@@ -81,7 +81,7 @@
     enabled: yes
 
 - name: Install xbuild
-  become: yes
+  become: no
   become_user: isucon
   git:
     repo: https://github.com/tagomoris/xbuild.git
