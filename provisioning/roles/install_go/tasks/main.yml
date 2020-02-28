@@ -30,7 +30,7 @@
     dest: /home/isucon/.bash_profile
     content: |
       export PATH=/home/isucon/local/go/bin:/home/isucon/go/bin:$PATH
-      export GOROOT=/home/isucon/local/go
+      export GOROOT=/home/isucon/go
 
 - name: Check Installed gb
   become: yes
