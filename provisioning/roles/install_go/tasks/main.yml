@@ -52,7 +52,7 @@
   when: go_gb_version_output is failed
   environment:
     PATH: "/home/isucon/local/go/bin:/home/isucon/go/bin:{{ ansible_env.PATH }}"
-    GOROOT: "/home/isucon/local/go"
+    GOROOT: "/home/isucon/go"
   args:
     chdir: /home/isucon
   command:
